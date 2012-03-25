@@ -28,3 +28,4 @@ group :production do
   gem 'pg', '0.12.2'
 end
 #include the PostgreSQL gem in production for deployment to Heroku:
+#Heroku recommends against using different databases in development and production, but for the sample application it won’t make any difference, and SQLite is much easier than PostgreSQL to install and configure.
