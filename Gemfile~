@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
+gem 'bootstrap-sass', '~> 2.0.0'
 
+.
 #This includes rspec-rails in development mode so that we have access to RSpec-specific generators, and it includes it in test mode in order to run the tests
 
 group :development, :test do
@@ -28,3 +30,4 @@ group :production do
   gem 'pg', '0.12.2'
 end
 #include the PostgreSQL gem in production for deployment to Heroku:
+#Heroku recommends against using different databases in development and production, but for the sample application it won’t make any difference, and SQLite is much easier than PostgreSQL to install and configure.
